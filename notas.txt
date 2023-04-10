@@ -1,0 +1,145 @@
+Los archivos archivo.inc.php son archivos que contienen información que no se verá, es interna.
+ERROR iniciomal6: cuando inicio sesion con datos inventados random
+ERROR iniciomal2: cuando inicio sesion con datos registrdos
+
+
+
+font-family: 'Gloock', serif;
+font-family: 'Montserrat', sans-serif;
+
+
+
+                        <?php
+                            if (isset($_SESSION["nick"])) {
+                                echo "<li><form class='d-flex'>";
+                                echo "<button class='btn btn-outline-light me-3' type='submit'>";
+                                echo "<a class='text-decoration-none' href='includes/perfil.php'>Mi Perfil</a>";
+                                echo "</button>";
+                                echo "<button class='btn btn-outline-light' type='submit'>";
+                                echo "<a class='text-decoration-none' href='includes/cerrar.inc.php'>Cerrar Sesión</a>";
+                                echo "</button>";
+                                echo "</form>";
+                                echo "</li>";
+                            } else {
+                                echo "<li><form class='d-flex'>";
+                                echo "<button class='btn btn-outline-light me-3' type='submit'>";
+                                echo "<a class='text-decoration-none' href='iniciar.php'>Iniciar Sesión</a>";
+                                echo "</button>";
+                                echo "<button class='btn btn-outline-light' type='submit'>";
+                                echo "<a class='text-decoration-none' href='registro.php'>Regístrate</a>";
+                                echo "</button>";
+                                echo "</form>";
+                                echo "</li>";
+                            }
+                        ?>
+
+
+
+
+                        <form action="includes/perfil.inc.php" method="post">
+                            <h2>Escoge tu tipo de piel:</h2>
+                            <select name="tipos" id="tipos">
+                                <option value="1">Normal</option>
+                                <option value="2">Grasa</option>
+                                <option value="3">Seca</option>
+                                <option value="4">Sensible</option>
+                                <option value="5">Mixta</option>
+                                <option value="6">Envejecida</option>
+                            </select>
+                            <br><br>
+                            <input type="submit" value="Seleccionar" name="submit">
+                        </form>
+
+                        <h2 class="mt-5">Lo que necesita tu piel es:</h2><hr class="mb-5">
+
+
+                                case '2':
+            $consulta1 = "SELECT nombre FROM quimicos WHERE pielID = 2;";
+            $consulta2 = "SELECT info FROM infoQuimicos WHERE quimicoID = 1;";
+
+            $resultado1 = mysqli_query($conexion, $consulta1);
+            $resultado2 = mysqli_query($conexion, $consulta2);
+
+            while ($row = mysqli_fetch_assoc($resultado1))
+            {
+                echo "<section class='py-2 text-center container'>";
+                echo "<div class='d-flex flex-row mb-3 card' style='width: 18rem;'>";
+                echo "<ul class='list-group list-group-flush'>";
+                echo "<li class='list-group-item'>".$row['nombre']."</li>";
+                echo "</ul></div></section>";
+            }
+
+            while ($row = mysqli_fetch_assoc($resultado2))
+            {
+                echo "<section class='py-2 text-center container'>";
+                echo "<div class='card' style='width: 18rem;'>";
+                echo "<ul class='list-group list-group-flush'>";
+                echo "<li class='list-group-item'>".$row['info']."</li>";
+                echo "</ul></div></section>";
+            }
+
+            break;
+
+
+
+
+
+        // echo "<section class='py-2 text-center container text-center'>";
+        // echo "<div class='d-flex flex-row mb-3 card' style='width: 18rem;'>";
+        // echo "<ul class='list-group list-group-flush'>";
+        // echo "<li class='list-group-item'>".$nombre."</li>";
+        // echo "<li class='list-group-item'>".$info."</li>";
+        // echo "</ul></div></section>";
+
+
+
+        PERFECTO CON TABLA:
+
+        function eligeQuimicos($conexion, $numPiel) {
+
+            $consulta = "SELECT quimicos.nombre, infoquimicos.info FROM quimicos INNER JOIN infoquimicos ON quimicos.quimicosID=infoquimicos.quimicoID WHERE quimicos.pielID=$numPiel;";
+            $resultado = mysqli_query($conexion, $consulta);
+
+            while ($row = mysqli_fetch_assoc($resultado)){
+
+                $nombre = $row["nombre"];
+                $info = $row["info"];
+
+                echo "<table class='table table-striped'>";
+                echo "<thead>";
+                echo "<tr>";
+                echo "<th class='display-4'></th>";
+                echo "<th style='width:80%' scope='col'></th>";
+                echo "</tr>";
+                echo "</thead>";
+                echo "<tbody>";
+                echo "<tr>";
+                echo "<th scope='row'>".$nombre."<img width='200px' src='img/".$nombre.".png'></th>";
+                echo "<td class='text-start'>".$info."</td>";
+                echo "</tr>";   
+                echo "</tbody>";
+                echo "</table>";
+            }
+        }
+
+
+
+        class dbConexion {
+    
+    private $host;
+    private $user;
+    private $pass;
+    private $baseDatos;
+    private $conexion;
+
+
+    public function __construct()
+    {
+        $this->host = "localhost";
+        $this->user = "root";
+        $this->pass = "";
+        $this->baseDatos = "bbdd-piel";
+        $this->conexion = new mysqli($this->host, $this->user, $this->pass, $this->baseDatos);
+    }
+
+}

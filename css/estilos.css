@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3 {
+    font-family: 'Gloock', serif;
+}
+
+p, .desplegable {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecera {
+    background-color: #F8F8F8;
+}
+
+.cuerpo-1 {
+    background-color: #2A292E;
+}
+
+.blog {
+    background-color: #E3DFDC;
+}
+
+.blog-section, .perfil {
+    background-color: #FAF6F3;
+}
+
+.registro, .inicio {
+    background-color: #FAF6F3;
+    padding: 8rem;
+}
+
+.inicio {
+    padding: 14rem;
+}
+
+footer {
+    margin-top: 4rem;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
