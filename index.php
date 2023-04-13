@@ -62,11 +62,6 @@
                     <div class="container-fluid py-5">
                         <h1 class="fw-bold">¿Qué tipo de piel tienes?</h1>
                         <p class="col-md-8 fs-4">Aquí te enseñamos a conocer tu piel enseñándote una serie de características con la que te sentirás identificado.</p>
-                        
-                        <form action="includes/blog.inc.php" method="post">
-                            <input type="text" name="nombre" id="">
-                            <input class="btn btn-outline-dark" type="submit" value="Leer más...">
-                        </form>
                     </div>
                     </div>
 

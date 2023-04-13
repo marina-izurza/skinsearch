@@ -171,7 +171,3 @@ function eligeQuimicos($conexion, $numPiel) {
         echo "</div></div></div></div></div>";
     }
 }
-
-function eligeBlog($conexion, $numEntrada) {
-    
-}
