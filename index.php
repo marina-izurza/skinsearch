@@ -74,8 +74,8 @@
                     <div class="row align-items-md-stretch">
                     <div class="col-md-6">
                         <div class="h-100 p-5 text-bg-light rounded-3">
-                            <h2>Cómo aplicar tus productos de cuidado facial</h2>
-                            <p>Debes saber que hay ciertos químicos que no deben mezclarse o que debes aplicar a ciertas horas de día.</p>
+                            <h2>Utensilios domésticos para cuidar tu piel en casa</h2>
+                            <p>Descubre algunas herramientas que te puedes ayudar a acelerar tus resultado</p>
                             <form action="blog2.php" method="post">
                                 <input class="btn btn-outline-dark" type="submit" value="Leer más...">
                             </form>
@@ -84,7 +84,7 @@
                     <div class="col-md-6">
                         <div class="h-100 p-5 bg-light border rounded-3">
                             <h2>BHA vs AHA</h2>
-                            <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+                            <p>Aprende a distinguir entre estos dos tipos de exfoliantes y mejora la textura de tu piel.</p>
                             <form action="blog3.php" method="post">
                                 <input class="btn btn-outline-dark" type="submit" value="Leer más...">
                             </form>
