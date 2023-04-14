@@ -12,7 +12,7 @@
         <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
 
-    <!-- aquí abajo van las entradas -->
+
 
 
 </section>

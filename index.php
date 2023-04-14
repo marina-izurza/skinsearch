@@ -15,7 +15,9 @@
                     ¡Aquí podrás aprender todo lo necesario para convertirte en una experta en skincare!
                 </p>
                 <p class="lead mb-0 text-center">
-                    <button type="button" class="btn btn-dark btn-lg">¡Descubre!</button>
+                    <button type="button" class="btn btn-dark btn-lg">
+                        <a href="#blog">¡Descubre!</a>
+                    </button>
                 </p>
             </div>
         </div>
@@ -56,12 +58,16 @@
 
 
         <!-- conjunto de entradas -->
+    <div id="blog">
         <div class="cuerpo-1">
             <div class="container py-4">
                 <div class="p-5 mb-4 bg-light rounded-3">
                     <div class="container-fluid py-5">
                         <h1 class="fw-bold">¿Qué tipo de piel tienes?</h1>
                         <p class="col-md-8 fs-4">Aquí te enseñamos a conocer tu piel enseñándote una serie de características con la que te sentirás identificado.</p>
+                        <form action="blog1.php" method="post">
+                            <input class="btn btn-outline-dark" type="submit" value="Leer más...">
+                        </form>
                     </div>
                     </div>
 
@@ -70,7 +76,7 @@
                         <div class="h-100 p-5 text-bg-light rounded-3">
                             <h2>Cómo aplicar tus productos de cuidado facial</h2>
                             <p>Debes saber que hay ciertos químicos que no deben mezclarse o que debes aplicar a ciertas horas de día.</p>
-                            <form action="includes/blog.inc.php" method="post">
+                            <form action="blog2.php" method="post">
                                 <input class="btn btn-outline-dark" type="submit" value="Leer más...">
                             </form>
                         </div>
@@ -79,13 +85,14 @@
                         <div class="h-100 p-5 bg-light border rounded-3">
                             <h2>BHA vs AHA</h2>
                             <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                            <form action="includes/blog.inc.php" method="post">
+                            <form action="blog3.php" method="post">
                                 <input class="btn btn-outline-dark" type="submit" value="Leer más...">
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 

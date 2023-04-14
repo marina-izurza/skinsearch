@@ -167,7 +167,6 @@ function eligeQuimicos($conexion, $numPiel) {
         echo "<div class='card-body'>";
         echo "<h5 class='card-title fst-italic fw-bold'>".$nombre."</h5>";
         echo "<p class='card-text'>".$info."</p>";
-        //echo "<p class='card-text'><small class='text-muted'><a class='btn btn-outline-dark' href='info.php'>Saber más...</a></small></p>";
         echo "</div></div></div></div></div>";
     }
 }
