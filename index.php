@@ -2,22 +2,19 @@
     include_once 'view/header.php';
 ?>
 
-
     <main>
 
         <!-- cabecera -->
         <div class="row mb-2 cabecera">
             <div class="p-4 p-md-5 mb-4">
-                <h1 class="display-5 text-center text-uppercase">TU LABORATORIO DE SKINCARE</h1>
+                <h1 class="display-5 text-center text-uppercase">TU BIBLIOTECA DE SKINCARE</h1>
                 <p class="lead my-5 text-center fw-normal">
                     Encuentra en nuestra web la solución a esas imperfecciones de tu rostro para 
-                    poder presumir de él o, por el contrario, si quieres mantener su buen aspecto.<br>
-                    ¡Aquí podrás aprender todo lo necesario para convertirte en una experta en skincare!
+                    poder presumir de él y mantener su buen aspecto.<br>
+                    ¡Aquí podrás aprender todo lo necesario para convertirte en un experto en skincare!
                 </p>
                 <p class="lead mb-0 text-center">
-                    <button type="button" class="btn btn-dark btn-lg">
-                        <a href="#blog">¡Descubre!</a>
-                    </button>
+                    <a style="text-decoration: none; color: #2A292E;" href="#blog">>¡Descubre!<</a>
                 </p>
             </div>
         </div>
@@ -49,7 +46,7 @@
                 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" 
                     style="background-image: url('img/pads.jpg'); background-size: cover;">
                     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tu plan personalizado</h3>
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Productos personalizados</h3>
                     </div>
                 </div>
             </div>
@@ -95,7 +92,6 @@
         </div>
         </div>
     </main>
-
 
 
 

@@ -7,11 +7,11 @@
             <h1 class="h3 mb-3 fw-normal display-5">Inciar Sesión</h1>
 
             <div class="form-floating w-50 mt-3">
-                <input name="nick" type="text" class="form-control" id="floatingInput" placeholder="correo@correo.com">
+                <input name="nick" type="text" class="form-control" id="floatingInput" placeholder=" ">
                 <label for="floatingInput">Usuario/Correo</label>
             </div>
             <div class="form-floating w-50">
-                <input name="pwd" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input name="pwd" type="password" class="form-control" id="floatingPassword" placeholder=" ">
                 <label for="floatingPassword">Contraseña</label>
             </div>
             

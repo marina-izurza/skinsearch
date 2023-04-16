@@ -4,27 +4,26 @@
 
 <div class="seccion registro">
     <form class="formulario" action="includes/registro.inc.php" method="post">
-        
         <h1 class="h3 mb-3 fw-normal display-5">Registro</h1>
 
         <div class="form-floating w-50 mt-3">
-            <input name="nombre" type="text" class="form-control" id="floatingInput">
+            <input name="nombre" type="text" class="form-control" id="floatingInput" placeholder=" ">
             <label for="floatingInput">Nombre</label>
         </div>
         <div class="form-floating w-50">
-            <input name="correo" type="email" class="form-control" id="floatingInput">
+            <input name="correo" type="email" class="form-control" id="floatingInput" placeholder=" ">
             <label for="floatingInput">Correo</label>
         </div>
         <div class="form-floating w-50">
-            <input name="nick" type="text" class="form-control" id="floatingInput">
+            <input name="nick" type="text" class="form-control" id="floatingInput" placeholder=" ">
             <label for="floatingInput">Usuario</label>
         </div>
         <div class="form-floating w-50">
-            <input name="pwd" type="password" class="form-control" id="floatingPassword">
+            <input name="pwd" type="password" class="form-control" id="floatingPassword" placeholder=" ">
             <label for="floatingPassword">Contraseña</label>
         </div>
         <div class="form-floating w-50">
-            <input name="pwdrepite" type="password" class="form-control" id="floatingPassword">
+            <input name="pwdrepite" type="password" class="form-control" id="floatingPassword" placeholder=" ">
             <label for="floatingPassword">Repite Contraseña</label>
         </div>
 

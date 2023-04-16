@@ -30,7 +30,7 @@ function correoMal($correo) {
     //Si el primer parámetro (correo) cumple con lo correcto, de vuelve true, pero nosotros queremos false 
     if (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
         $validez = true;
-    } else {//
+    } else {
         $validez = false;
     }
     return $validez;
@@ -81,10 +81,9 @@ function usuarioRepetido($conexion, $usuario, $correo) {
 
 function crearUsuario($conexion, $nombre, $correo, $usuario, $pwd) {
     $consulta = "INSERT INTO usuarios (nombreUsuarios, correoUsuarios, nickUsuarios, pwdUsuarios) VALUES (?, ?, ?, ?);";
-    $statement = mysqli_stmt_init($conexion); //prepara ypreviene la inyeccion por ususario en inputs
+    $statement = mysqli_stmt_init($conexion);
     
-    //Ejecuta esta consulta dentro del comprobante (statement) y a ver si hay errores
-    //Si hay un error, le mandamos a esa localización
+    
     if (!mysqli_stmt_prepare($statement, $consulta)) {
         header("location: ../registro.php?error=statementmal");
         exit();
@@ -92,14 +91,14 @@ function crearUsuario($conexion, $nombre, $correo, $usuario, $pwd) {
 
     $encriptarPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-    //Mandamos 4Strings y los datos
+    
     mysqli_stmt_bind_param($statement, "ssss", $nombre, $correo, $usuario, $encriptarPwd);
 
     mysqli_stmt_execute($statement);
 
     mysqli_stmt_close($statement);
 
-    //Cuando se registre correctamente, le mandamos a esta ruta
+    
     header("location: ../registro.php?error=exito");
     exit();
 }
@@ -149,7 +148,9 @@ function inicioSesion($conexion, $usuario, $pwd) {
 
 function eligeQuimicos($conexion, $numPiel) {
 
-    $consulta = "SELECT quimicos.nombre, infoquimicos.info FROM quimicos INNER JOIN infoquimicos ON quimicos.quimicosID=infoquimicos.quimicoID WHERE quimicos.pielID=$numPiel;";
+    $consulta = "SELECT quimicos.nombre, infoquimicos.info FROM quimicos INNER JOIN infoquimicos 
+        ON quimicos.quimicosID=infoquimicos.quimicoID WHERE quimicos.pielID=$numPiel;";
+        
     $resultado = mysqli_query($conexion, $consulta);
 
     while ($row = mysqli_fetch_assoc($resultado)){

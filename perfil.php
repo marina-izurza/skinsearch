@@ -13,10 +13,9 @@
         ?>
 
         <p class="lead text-muted fw-normal">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Magni quisquam distinctio facilis ad facere similique 
-            iusto fuga eveniet ratione iure maxime labore adipisci, 
-            nemo commodi libero odit ea voluptas consequuntur?
+            ¡Bienvenido a tu perfil! <br>
+            Desde aquí puedes consultar los 
+            tipos de productos según tu tipo de piel.
         </p>
 
         
@@ -29,13 +28,12 @@
                 <option value="2">Grasa</option>
                 <option value="3">Seca</option>
                 <option value="4">Sensible</option>
-                <option value="5">Mixta</option>
                 <option value="6">Envejecida</option>
             </select>
 
             <input class="py-2 px-5 mt-2 btn btn-outline-dark desplegable" type="submit" value="Seleccionar" name="submit">
         </form>
-        <span class="fw-bold">Si aún tienes dudas, descubre <a href="blog.php">aquí</a></span>
+        <span class="fw-bold">Si aún tienes dudas, descubre <a href="blog1.php">aquí</a></span>
       </div>
     </div>
   </section>
