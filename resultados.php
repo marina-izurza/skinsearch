@@ -1,5 +1,5 @@
 <?php
-    include_once 'view/header.php';
+include_once 'view/header.php';
 ?>
 
 <section class="py-4 container">
@@ -7,22 +7,21 @@
     <hr class="mb-5">
 
     <?php
-        if (isset($_POST["submit"])) {
+    if (isset($_POST["submit"])) {
 
-            $seleccionPiel = $_POST['tipos']; //Eleccion del usuario
+        $seleccionPiel = $_POST['tipos']; //Eleccion del usuario
 
-            require_once 'model/db.php';
-            require_once 'includes/funciones.inc.php';
-            
-            eligeQuimicos($conexion, $seleccionPiel);
-            
-        } else {
-            header("location: perfil.php");
-            exit();
-        }
+        require_once 'model/db.php';
+        require_once 'includes/funciones.inc.php';
+
+        eligeQuimicos($conexion, $seleccionPiel);
+    } else {
+        header("location: perfil.php");
+        exit();
+    }
     ?>
 </section>
 
 <?php
-    include_once 'view/footer.php';
+include_once 'view/footer.php';
 ?>

@@ -1,5 +1,5 @@
 <?php
-    include_once 'view/header.php';
+include_once 'view/header.php';
 ?>
 
 <div class="seccion registro">
@@ -28,7 +28,7 @@
         </div>
 
         <button class="btn btn-lg btn-dark w-50 mt-4" type="submit" name="submit">Registrarse</button>
-        
+
         <?php
         if (isset($_GET["error"])) {
             if ($_GET["error"] == "inputvacio") {
@@ -45,10 +45,10 @@
                 echo "<p>Este nombre de usuario ya existe</p>";
             } else if ($_GET["error"] == "exito") {
                 echo "<p>Registro con éxito</p>";
-            }  
+            }
         }
         ?>
-        
+
         <p class="py-3">Si ya tienes cuenta, <a href="iniciar.php">inicia sesión.</a></p>
 
     </form>
@@ -56,5 +56,5 @@
 </div>
 
 <?php
-    include_once 'view/footer.php';
+include_once 'view/footer.php';
 ?>

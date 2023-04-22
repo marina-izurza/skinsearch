@@ -47,8 +47,6 @@ if (isset($_POST["submit"])) {
     }
 
     crearUsuario($conexion, $nombre, $correo, $usuario, $pwd);
-
-
 } else {
     header("location: ../registro.php");
     exit();

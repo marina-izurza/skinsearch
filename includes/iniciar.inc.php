@@ -18,7 +18,6 @@ if (isset($_POST["submit"])) {
     }
 
     inicioSesion($conexion, $usuario, $pwd);
-    
 } else {
     header("location: ../iniciar.php");
     exit();
