@@ -14,7 +14,9 @@ include_once 'view/header.php';
                 ¡Aquí podrás aprender todo lo necesario para convertirte en un experto en skincare!
             </p>
             <p class="lead mb-0 text-center">
-                <a style="text-decoration: none; color: #2A292E;" href="#blog">>¡Descubre!<
+                <a style="text-decoration: none; color: #2A292E;" href="#blog">
+                    <img class="arrow bounce" src="img/down.png" alt="down-arrow" width="25px">
+                </a>
             </p>
         </div>
     </div>

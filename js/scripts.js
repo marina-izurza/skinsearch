@@ -7,9 +7,9 @@ $(document).ready(function () {
         setTimeout(function () {
             // Crea el HTML para el pop up
             var html = '<div class="popup">' +
-                '<button class="close-btn">X</button>' +
+                '<button class="close-btn" style>X</button>' +
                 '<h2>¡Bienvenido!</h2>' +
-                '<p>Por favor inicia sesión o regístrate para acceder a todo el contenido.</p>' +
+                '<p>Por favor, inicia sesión o regístrate para acceder a todo el contenido.</p>' +
                 '<button class="login-btn">Iniciar sesión</button>' +
                 '<button class="register-btn">Registrarse</button>' +
                 '</div>';
@@ -32,7 +32,7 @@ $(document).ready(function () {
                 $('.popup').hide();
             })
 
-        }, 1000); // 60000 milisegundos (1 minuto)
+        }, 5000); // 5000 milisegundos (5 segundos)
 
         //Almacena un valor en localStorage para indicar que el pop up ya salió
         localStorage.setItem('popupShown', true);
